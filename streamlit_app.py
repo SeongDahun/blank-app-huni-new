@@ -75,7 +75,9 @@ import pandas as pd
 st.title("1️⃣ ✅ 공개 Google Sheet 읽기")
 st.info("📘 누구나 볼 수 있도록 공개된 시트를 Pandas로 직접 불러오는 가장 간단한 방법입니다.\n📎 링크는 반드시 `export?format=csv` 형태로 설정하세요.")
 
-csv_url1 = "https://docs.google.com/spreadsheets/d/1VC_q8HJfIufjGVR2zGRcJjBgkefIbp6Pv01rQ1uvoXI/export?format=csv"
+
+
+csv_url1 = public_url
 df1 = pd.read_csv(csv_url1)
 st.dataframe(df1)
 
